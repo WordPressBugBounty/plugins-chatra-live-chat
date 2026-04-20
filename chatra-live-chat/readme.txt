@@ -1,14 +1,15 @@
-﻿=== Chatra Live Chat + ChatBot + Cart Saver ===
+=== Chatra Live Chat + ChatBot + Cart Saver ===
 Contributors: chatra
 Donate link: https://chatra.com/
-Tags: сhat, chatbot, live chat, livechat, facebook chat, chat software, contact plugin, contact us, customer support, free chat, live chat software, live chatting, live help, live support, wordpress chat, wordpress live chat, wordpress live chat plugin, chat widget
-Requires at least: 3.0.1
-Tested up to: 6.0
-Stable tag: trunk
+Tags: live chat, chatbot, chat widget, customer support, livechat
+Requires at least: 4.0
+Tested up to: 6.9
+Requires PHP: 5.6
+Stable tag: 1.0.12
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Powerful chat / chatbot / Fb chat and cart saver app for Wordpress and WooCommerce, free as long as you want.
+Powerful chat / chatbot / Fb chat and cart saver app for WordPress and WooCommerce, free as long as you want.
 
 == Description ==
 
@@ -37,7 +38,7 @@ Work from a web dashboard or desktop apps for Windows & Mac. Chat on the go from
 * **Looks & feels as a messenger app.** Smooth animations, avatars, beautiful design.
 * **Agent photos visible pre-chat.** After clicking on the widget, visitors can see photos and names of the online agents, even before they start chatting. This is highly engaging and can lift a number of quality chat interactions.
 * **Full Ecwid support.**
-* **Full Woocommerce support.**
+* **Full WooCommerce support.**
 * **Work from a browser, desktop or mobile apps.** Windows & Mac, Android & iOS. Even on the go we’ve got you covered!
 * **Free forever plan.**
 
@@ -53,7 +54,7 @@ Web dashboard, desktop apps for Windows & Mac, Android & iOS — we’ve got you
 * Install and activate the Chatra Plugin through the 'Plugins' menu in WordPress
 * After installation, click the Settings → Chatra chat section in the left toolbar
 * Create a new free Chatra account, or use your existing one. Log in into [https://app.chatra.io](https://app.chatra.io) in another browser tab and copy the widget code from "Chat Widget" section.
-* Go back to Wordpress console, paste the code and press Save changes
+* Go back to WordPress console, paste the code and press Save changes
 * Done!
 
 Download and install the agent's app on your computer or mobile, or use our browser-based app!
@@ -106,3 +107,10 @@ For additional information check [https://chatra.com](https://chatra.com)
 * Translation ready
 = 1.0.10 =
 * Portuguese translation
+= 1.0.11 =
+* Maintenance update.
+= 1.0.12 =
+* Refreshed plugin metadata: tested up to WordPress 6.9, declared minimum WordPress 4.0 and PHP 5.6.
+* Added direct-access guard to the main plugin file (security hygiene).
+* Switched the widget-code textarea to `esc_textarea()` so multiline snippets round-trip without distortion.
+* Tightened the readme `Tags` list to the WordPress.org-recommended five.

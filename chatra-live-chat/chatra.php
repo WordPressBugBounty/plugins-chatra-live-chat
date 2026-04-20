@@ -5,12 +5,18 @@
  * Description: Chatra allows you to chat with your visitors, view the list of visitors who are currently online on your website and start a conversation manually or via configurable automatic targeted messages.
  * Author: Chatra
  * Author URI: https://chatra.com
- * Version: 1.0.11
+ * Version: 1.0.12
+ * Requires at least: 4.0
+ * Requires PHP: 5.6
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: chatra-live-chat
  * Domain Path: /languages
  */
+
+if (!defined('ABSPATH')) {
+    exit;
+}
 
 // Add multilingual support
 add_action('init', 'chatra_plugin_init');
@@ -43,7 +49,7 @@ function chatra_settings()
     echo "<form action=\"options.php\" method=\"POST\">";
     settings_fields('chatra');
     do_settings_sections('chatra');
-    echo "<textarea cols=\"80\" rows=\"14\" name=\"chatra-code\">" . esc_attr(get_option('chatra-code')) . "</textarea>";
+    echo "<textarea cols=\"80\" rows=\"14\" name=\"chatra-code\">" . esc_textarea(get_option('chatra-code')) . "</textarea>";
     submit_button();
     echo "</form>";
 }
