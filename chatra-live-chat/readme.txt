@@ -2,10 +2,10 @@
 Contributors: chatra
 Donate link: https://chatra.com/
 Tags: live chat, chatbot, chat widget, customer support, livechat
-Requires at least: 4.0
-Tested up to: 6.9
+Requires at least: 4.5
+Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 1.0.12
+Stable tag: 1.0.13
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,3 +114,12 @@ For additional information check [https://chatra.com](https://chatra.com)
 * Added direct-access guard to the main plugin file (security hygiene).
 * Switched the widget-code textarea to `esc_textarea()` so multiline snippets round-trip without distortion.
 * Tightened the readme `Tags` list to the WordPress.org-recommended five.
+= 1.0.13 =
+* Security update.
+* The widget is now loaded through the WordPress script API (`wp_enqueue_script`) rather than printed directly into the footer.
+* Tested up to WordPress 7.0; minimum WordPress raised to 4.5.
+
+== Upgrade Notice ==
+
+= 1.0.13 =
+Security update. Please update immediately.
